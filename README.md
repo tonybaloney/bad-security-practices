@@ -619,3 +619,9 @@ Files skipped (1):
 
 ```
 </p> </details>
+
+
+## PyCharm Security Plugin
+
+[PyCharm Security](https://github.com/tonybaloney/pycharm-security) reports 89 issues
+
