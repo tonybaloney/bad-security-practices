@@ -35,5 +35,5 @@ x = """
 <lolz>&lol9;</lolz>
 """
 
-parse(x)  # bad
-parseString(x)  # bad
+parse(x)  # bad. goes boom
+parseString(x)  # bad. goes bang
