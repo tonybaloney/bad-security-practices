@@ -1,3 +1,5 @@
 sqlachemy
 pyyaml
 django
+jinja2
+mako
