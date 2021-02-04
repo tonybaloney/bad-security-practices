@@ -4,6 +4,20 @@ A Python goat.
 
 There are around 80 unique security bugs in this project.
 
+| Tool          | Bugs Found    | 
+| ----------------------- |:-------------:|
+| PyCharm Security (Integrated)      | 89 |
+| PyCharm Security (Github Action)      | - |
+| bandit      | 64      |
+| OSSAR | 4     |
+| CodeQL | 1 | 
+
+## OSSAR
+
+OSSAR reports 4
+
+## 
+
 ## Bandit
 
 Bandit *.py reports 64 issues
