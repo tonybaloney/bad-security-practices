@@ -35,5 +35,5 @@ x = """
 <lolz>&lol9;</lolz>
 """
 
-parse(x)  # bad. goes boom
+parse('lol.xml')  # bad. goes boom
 parseString(x)  # bad. goes bang
