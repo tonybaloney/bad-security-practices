@@ -14,7 +14,7 @@ There are around 80 unique security bugs in this project.
 | PyCharm Security (Github Action)   | 88 |
 | bandit      | 64      |
 | OSSAR | 4     |
-| CodeQL | 1 | 
+| CodeQL | 15 | 
 
 ## OSSAR
 
