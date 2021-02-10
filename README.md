@@ -1,5 +1,9 @@
 # bad-security-practices
 
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/tonybaloney/bad-security-practices.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/tonybaloney/bad-security-practices/alerts/)
+
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/tonybaloney/bad-security-practices.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/tonybaloney/bad-security-practices/context:python)
+
 A Python goat.
 
 There are around 80 unique security bugs in this project.
