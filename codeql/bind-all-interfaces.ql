@@ -7,7 +7,7 @@
  * @problem.severity error
  * @sub-severity low
  * @precision high
- * @id py/bind-socket-all-network-interfaces
+ * @id py/bind-socket-all-network-interfaces-extended
  */
 
 import python
