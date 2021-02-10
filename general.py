@@ -4,7 +4,7 @@ import os
 from os import chmod as chmoooood
 import pickle
 import tempfile
-
+import socket
 
 def is_admin(user):
     """
@@ -85,3 +85,38 @@ def try_except_pass():
         # do nothing!
         pass
 
+def bind_all_the_interfaces_correct_pattern():
+    """Use Context Managers (best practice)"""
+    # Bad
+    with socket.socket(family=socket.AddressFamily.AF_INET) as sock:
+        sock.bind(("", 43))
+    # BAd
+    with socket.socket(family=socket.AddressFamily.AF_INET) as sock:
+        sock.bind(("0.0.0.0", 45))
+    # Bad
+    with socket.socket(family=socket.AddressFamily.AF_INET6) as sock:
+        sock.bind(("::", 46))
+    # Bad
+    with socket.socket(family=socket.AddressFamily.AF_INET6) as sock:
+        sock.bind(("0:0:0:0:0:0:0:0", 47))
+    # ok
+    with socket.socket(family=socket.AddressFamily.AF_INET) as sock:
+        sock.bind(("127.0.0.1", 48))
+
+
+def bind_all_the_interfaces():
+    # Bad
+    sock = socket.socket(family=socket.AddressFamily.AF_INET)
+    sock.bind(("", 43))
+    # BAd
+    sock2 = socket.socket(family=socket.AddressFamily.AF_INET)
+    sock2.bind(("0.0.0.0", 45))
+    # Bad
+    sock3 = socket.socket(family=socket.AddressFamily.AF_INET6)
+    sock3.bind(("::", 46))
+    # Bad
+    sock4 = socket.socket(family=socket.AddressFamily.AF_INET6)
+    sock4.bind(("0:0:0:0:0:0:0:0", 47))
+    # ok
+    sock5 = socket.socket(family=socket.AddressFamily.AF_INET)
+    sock5.bind(("127.0.0.1", 48))
