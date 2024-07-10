@@ -3,3 +3,4 @@ pyyaml
 django
 jinja2
 mako
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
